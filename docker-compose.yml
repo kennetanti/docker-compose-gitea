@@ -12,7 +12,6 @@ services:
     volumes:
       - ./volumes/gitea_app:/data
     ports:
-      - "${GITEA_SSH_PORT}:22"
       - "${GITEA_WEB_PORT}:3000"
     environment:
       - VIRTUAL_PORT=3000
